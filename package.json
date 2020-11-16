@@ -1,0 +1,20 @@
+{
+  "name": "first-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc":  "tsc -p ./tsconfig.json",
+    "mkdir-build": "rm -rf ./build && mkdir build",
+    "build:tsc": "npm run tsc",
+    "build": "npm run mkdir-build && npm run build:tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.9",
+    "express": "^4.17.1",
+    "typescript": "^4.0.5"
+  }
+}
